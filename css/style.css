@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+}
+header {
+    display: inline-block;
+    padding: 15px;
+}
+header ul {
+    display: inline-block;
+    color: #275460;
+  
+}
+
+header li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+header p {
+    display: inline-block;
+}
+.heroImg {
+    background-color: #EBEBEB;
+    padding: 100px 15px;
+
+}
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+button {
+    padding: 15px;
+    background-color: #a26b59;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+}
+footer {
+    background-color: #275460;
+    padding: 5px;
+    color: white;
+    text-align: center;
+
+}
+footer ul {
+    list-style: none;
+    padding-left: 5px;
+}
+footer li {
+    display: inline-block;
+    padding: 0px 7px;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    column-count: 2;
+    padding: 9px;
+    margin: 0 auto;
+    background-color:#e0baa8;
+
+}
+
+h1 {
+    color: #a26b59;
+    padding: 5px;  
+}
+
+.mySkills {
+    color: white;
+}
+
+
+    
+.workGrid {
+    display: flex;
+    flex-direction: column;
+    column-count: 3;
+    justify-content: space-between;
+    background-color: #e0baa8;
+    color: white;
+    padding: 9px;
+}
