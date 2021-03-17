@@ -8,7 +8,6 @@ header {
 header ul {
     display: inline-block;
     color: #275460;
-  
 }
 
 header li {
@@ -37,13 +36,14 @@ button {
     color: white;
     font-size: 15px;
     border-radius: 4px;
+    height: 70px;
+    width: 100px;
 }
 footer {
     background-color: #275460;
     padding: 5px;
     color: white;
     text-align: center;
-
 }
 footer ul {
     list-style: none;
@@ -56,24 +56,51 @@ footer li {
 
 .flexContainer {
     display: flex;
-    flex-direction: column;
-    column-count: 2;
     padding: 9px;
     margin: 0 auto;
     background-color:#e0baa8;
-
 }
-
 h1 {
     color: #a26b59;
     padding: 5px;  
 }
 
 .mySkills {
-    color: white;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: teal;
+    color: white;   
 }
 
+.aboutFlex {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: thistle;
+ 
+}
 
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    background-color: tomato;
+}
+
+.currentlyContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightskyblue;
+}
+
+.myWork {
+    display: flex;
+    flex-direction: column;
+}
     
 .workGrid {
     display: flex;
@@ -83,4 +110,30 @@ h1 {
     background-color: #e0baa8;
     color: white;
     padding: 9px;
+}
+
+.fitWell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+    padding: 9px;
+   
+}
+
+.doiRedesign {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 150px;
+    margin-top: -30px;
+    padding: 15px;
+    
+}
+
+.allProjects {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding-bottom: 10px;
 }
