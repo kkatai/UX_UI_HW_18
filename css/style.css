@@ -54,47 +54,42 @@ footer li {
     padding: 0px 7px;
 }
 
-.flexContainer {
-    display: flex;
+.gridContainer {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
     padding: 9px;
     margin: 0 auto;
     background-color:#e0baa8;
 }
+
 h1 {
     color: #a26b59;
     padding: 5px;  
 }
-
-.mySkills {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    background-color: teal;
-    color: white;   
+.gridContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "topLeft topRight"
+    "bottomLeft bottom Right";
+    color: white;
+    padding: 9px;
+    margin: 0 auto;
+    background-color: #e0baa8;
 }
-
-.aboutFlex {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    background-color: thistle;
- 
+.topLeft {
+    grid-template-areas: "topLeft";
 }
-
-.skillsContainer {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 10px;
-    background-color: tomato;
+.bottomLeft {
+    grid-template-areas: "bottomLeft";
 }
-
-.currentlyContainer {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 10px;
-    background-color: lightskyblue;
+.topRight {
+    grid-template-areas: "topRight";
+}
+.bottomRight {
+    grid-template-areas: "bottomRight";
 }
 
 .myWork {
@@ -107,7 +102,7 @@ h1 {
     flex-direction: column;
     column-count: 3;
     justify-content: space-between;
-    background-color: #e0baa8;
+    background-color: #eac0b0;
     color: white;
     padding: 9px;
 }
@@ -137,3 +132,80 @@ h1 {
     color: white;
     padding-bottom: 10px;
 }
+
+
+@media only screen and (max-width:600){
+    .headerli {
+        display: none;
+    }
+      .gridContainer{
+        background-color: mediumorchid;
+        width: 100%;
+        grid-template-rows: 300px 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "topRight"
+        "topLeft"
+        "bottomRight"
+        "bottomLeft"
+      }
+      .workGrid {
+        background-color: mediumseagreen;
+        width: 100%;
+        grid-template-rows: 300px 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "fitWell"
+          "doiRedesign"
+        ;
+      }
+    }
+
+    /*s
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
+        grid-template-rows: 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            ".topRight"
+            ".topLeft"
+            ".bottomRight"
+            ".bottomLeft"
+    ;
+    }
+/* 
+.mySkills {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    background-color: teal;
+    color: white;   
+}
+
+.aboutGrid {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    background-color: thistle;
+ 
+}
+
+.skillsContainer {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+    margin: 10px;
+    background-color: tomato;
+}
+
+.currentlyContainer {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightskyblue;
+}
+*/
